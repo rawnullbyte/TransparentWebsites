@@ -6,6 +6,7 @@
   "permissions": [
     "storage",
     "activeTab",
+    "tabs",
     "scripting"
   ],
   "background": {
@@ -20,5 +21,11 @@
   ],
   "action": {
     "default_title": "Toggle Transparency"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "transparent-websites@nullbyte.rip",
+      "strict_min_version": "109.0"
+    }
   }
 }
