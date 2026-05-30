@@ -25,10 +25,10 @@
   "browser_specific_settings": {
     "gecko": {
       "id": "transparent-websites@nullbyte.rip",
-      "strict_min_version": "109.0"
-    },
-    "data_collection_permissions": {
-      "is_used": false
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
