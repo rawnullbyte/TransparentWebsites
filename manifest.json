@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Transparent websites",
+  "version": "1.0",
+  "description": "Automatically generates css and injects it to make websites look transparent.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scanner.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "Toggle Transparency"
+  }
+}
